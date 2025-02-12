@@ -1,8 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8d7da;
+    background-image: url('https://example.com/heart-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     padding: 50px;
+    animation: changeBackground 5s infinite;
 }
 
 header h1 {
