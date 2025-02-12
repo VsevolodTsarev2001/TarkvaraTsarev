@@ -26,3 +26,17 @@ document.getElementById('heart').addEventListener('click', function() {
     //Меняем фона сердца на случайный
     heart.style.backgroundColor = randomColor;
 });
+
+document.getElementById('sendGiftButton').addEventListener('click', function() {
+    // Создаем новый параграф с текстом
+    const message = document.createElement('p');
+    message.textContent = 'Подарок отправлен!';
+
+    // Добавляем созданное сообщение на страницу
+    document.body.appendChild(message);
+
+    // Через 3 секунды скрываем сообщение
+    setTimeout(() => {
+        message.style.display = 'none';
+    }, 3000);
+});
