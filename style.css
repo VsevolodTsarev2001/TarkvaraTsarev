@@ -29,6 +29,11 @@ button:hover {
     transition: transform 0.2s ease;
 }
 
+#heartSize {
+    margin-top: 20px;
+    width: 200px;
+}
+
 .heart {
     width: 100px;
     height: 100px;
@@ -41,6 +46,18 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+@keyframes moveText {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.moving-text {
+    position: absolute;
+    top: 50px;
+    font-size: 2rem;
+    color: #e63946;
+    animation: moveText 10s linear infinite;
+}
 
 @keyframes changeBackground {
     0% { background-color: #f8d7da; }
