@@ -35,3 +35,9 @@ button:hover {
     transform: scale(0);
     transition: transform 0.3s ease-in-out;
 }
+
+body {
+    background-image: url('heart.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
