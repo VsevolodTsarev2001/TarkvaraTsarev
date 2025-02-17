@@ -135,7 +135,7 @@ document.getElementById('sendGiftButton').addEventListener('click', function() {
 });
 ```
 #  Täiendavad ülesanded:
-## 11) Lisa liugur, mille abil saab muuta südame suurust.
+**11) Lisa liugur, mille abil saab muuta südame suurust.**
 
  Ülesanne: Loo liugur, mis võimaldab kasutajal südame suurust muuta. Kasutaja liuguri liikumist jälgitakse ja südame suurus muutub vastavalt liuguri väärtusele.
     Nõuded: Kasuta <input type="range"> elementi ja JavaScripti, et muuta südame suurust.
@@ -154,7 +154,7 @@ document.getElementById('heartSize').addEventListener('input', function(event) {
     heart.style.height = event.target.value + 'px';
 });
 ```
-## 12) Lisa tekst, mis liigub üle ekraani.
+**12) Lisa tekst, mis liigub üle ekraani.**
 Ülesanne: Loo animatsioon, kus sõnum liigub horisontaalselt üle ekraani, et luua pidulik ja dünaamiline efekt.
 Nõuded: Kasuta CSS-i @keyframes ja position: absolute, et liikumisefekt oleks sujuv.
 
