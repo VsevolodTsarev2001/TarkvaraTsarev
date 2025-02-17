@@ -123,7 +123,7 @@ Nõuded: Lisa veel üks nupp, mis suhtleb kasutajaga, saates kingituse ja kuvade
 ```
 <button id="sendGiftButton">Saada kingitus sõbrale</button>
 ```
-Näide JavaScriptis:
+>Näide JavaScriptis:
 ```
 document.getElementById('sendGiftButton').addEventListener('click', function() {
     const message = document.createElement('p');
@@ -133,4 +133,48 @@ document.getElementById('sendGiftButton').addEventListener('click', function() {
         message.style.display = 'none';
     }, 3000);
 });
+```
+###Täiendavad ülesanded:
+**11) Lisa liugur, mille abil saab muuta südame suurust.
+
+ Ülesanne: Loo liugur, mis võimaldab kasutajal südame suurust muuta. Kasutaja liuguri liikumist jälgitakse ja südame suurus muutub vastavalt liuguri väärtusele.
+    Nõuded: Kasuta <input type="range"> elementi ja JavaScripti, et muuta südame suurust.
+    
+>Näide HTML-is:
+   
+```
+<label for="heartSize">Muuda südame suurust:</label>
+<input type="range" id="heartSize" min="50" max="200" value="100">
+```
+>Näide JavaScriptis:
+```
+document.getElementById('heartSize').addEventListener('input', function(event) {
+    const heart = document.getElementById('heart');
+    heart.style.width = event.target.value + 'px';
+    heart.style.height = event.target.value + 'px';
+});
+```
+##12) Lisa tekst, mis liigub üle ekraani.
+Ülesanne: Loo animatsioon, kus sõnum liigub horisontaalselt üle ekraani, et luua pidulik ja dünaamiline efekt.
+Nõuded: Kasuta CSS-i @keyframes ja position: absolute, et liikumisefekt oleks sujuv.
+
+>Näide CSS-is:
+```
+@keyframes moveText {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.moving-text {
+    position: absolute;
+    top: 50px;
+    font-size: 2rem;
+    color: #e63946;
+    animation: moveText 10s linear infinite;
+}
+
+```
+>Näide HTML-is:
+```
+<div class="moving-text">Armasta iga hetk! Õnnelikku valentipäeva!</div>
 ```
