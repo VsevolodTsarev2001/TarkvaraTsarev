@@ -1,6 +1,7 @@
 # Ülesanded
 **1) Muuda nuppu teksti**
 
+
 Ülesanne: Muuda nupu tekst "Tee kingitus" midagi pidulikumat, näiteks "Kingita südameke".
 
 Nõuded: Muuda HTML failis nuppude teksti ```<button id="loveButton">.```
